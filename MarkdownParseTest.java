@@ -43,7 +43,7 @@ public class MarkdownParseTest {
         String content = Files.readString(fileName);
         List<String> expected=List.of("https://www.twitter.com", 
         "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule", 
-        "https://cse.ucsd.edu/, https://cse.ucsd.edu/");
+        "https://cse.ucsd.edu/");
         System.out.println(expected);
         assertEquals(expected,
         MarkdownParse.getLinks(content));
